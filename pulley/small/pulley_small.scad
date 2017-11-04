@@ -4,14 +4,21 @@ use <pulley_inner_small.scad>
 
 module pulley_small() {
     union() {
-        pulley_outer_small(diameter, ketebalan);
+        color("Aquamarine", 0.5) {
+            pulley_outer_small(diameter, ketebalan);
+        }
+        
         union() {
             translate([0, 0, ketebalan]) {
-                pulley_inner_small(diameter, ketebalan);
+                color("Salmon", 0.5) {
+                    pulley_inner_small(diameter, ketebalan);
+                }
             }
             
             translate([0, 0, ketebalan * 2]) {
-                pulley_outer_small(diameter, ketebalan);
+                color("Aquamarine", 0.5) {
+                    pulley_outer_small(diameter, ketebalan);
+                }
             }
         }
     }
