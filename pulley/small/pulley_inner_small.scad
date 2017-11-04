@@ -1,5 +1,5 @@
-include <pulley_parameter.scad>
-use <pulley_center.scad>
+include <../pulley_parameter.scad>
+use <../pulley_center.scad>
 
 module pulley_inner_small(diameter, ketebalan) {
     difference() {

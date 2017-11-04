@@ -1,4 +1,4 @@
-include <pulley_parameter.scad>
+include <../pulley_parameter.scad>
 use <pulley_outer_small.scad>
 use <pulley_inner_small.scad>
 
